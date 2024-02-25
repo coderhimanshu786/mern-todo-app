@@ -75,8 +75,10 @@ body {
   width: 100%;
   border-radius: 10px;
   font-size: 1.5rem;
+  cursor: pointer;
 
   &:hover {
+    transition: all 4s ease-in;
     background-color: rgba(0, 0, 0, 0.2);
   }
 }
@@ -100,7 +102,17 @@ body {
 svg{
   background: transparent;
 }
+.form-btn{
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(43, 193, 43);
+  font-weight: 545;
+  font-size: larger;
 
+  &:hover {
+  background-color: rgb(37, 112, 38);
+  }
+}
 
 /* form styling*/
 
@@ -117,4 +129,23 @@ svg{
   padding: 0.25rem 0.5rem;
   border-radius: 5px;
   border: none;
+  outline: none;
+
+&:focus, &:hover{
+  background-color: rgba(225, 225, 225, 0.9);
+}
+}
+
+/* for mobile responsive */
+@media (max-width: 420px){
+  .title{
+    font-size: 2rem;
+  }
+  .form{
+    width: 95%;
+  }
+  .todo{
+    width: 98%;
+    font-size: 1rem;
+  }
 }
