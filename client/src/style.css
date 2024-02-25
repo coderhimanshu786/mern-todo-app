@@ -1,0 +1,120 @@
+/* style reset */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  cursor: pointer;
+  border: none;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+body {
+  background-color: #050505e9;
+  color: aliceblue;
+  font-family: 'Rubik', sans-serif;
+}
+
+.container {
+  max-width: 700px;
+  margin: 22px auto;
+  padding: 32px;
+  border-radius: 10px;
+  background-image: url("https://www.transparenttextures.com/patterns/brushed-alum.png");
+}
+
+.title {
+  text-align: center;
+}
+
+.todos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.todo {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1.25rem;
+  background-color: rgba(0, 0, 0, 0.1);
+  width: 100%;
+  border-radius: 10px;
+  font-size: 1.5rem;
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+}
+.mutations {
+  display: flex;
+  gap: 0.6rem;
+}
+.todo__status,
+.todo__delete {
+  border: none;
+  padding: 0;
+  line-height: 1;
+  cursor: pointer;
+  transition: all 0.3s;
+  background: transparent;
+
+  &:hover {
+    transform: scale(1.15);
+  }
+}
+svg{
+  background: transparent;
+}
+
+
+/* form styling*/
+
+.form {
+  display: flex;
+  gap: 0.5rem;
+  width: -webkit-filled-available;
+  margin: 1rem auto;
+  border: none;
+}
+.form__input {
+  flex: 1;
+  font-size: 1.3rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 5px;
+  border: none;
+}
