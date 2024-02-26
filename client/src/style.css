@@ -46,7 +46,7 @@ h6 {
 body {
   background-color: #050505e9;
   color: aliceblue;
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
 }
 
 .container {
@@ -54,9 +54,13 @@ body {
   margin: 22px auto;
   padding: 32px;
   border-radius: 10px;
-  background-image: url("https://www.transparenttextures.com/patterns/brushed-alum.png");
+  background-image: url("https://media.istockphoto.com/id/1369431916/vector/white-clipboard-task-management-todo-check-list-efficient-work-on-project-plan-fast-progress.jpg?s=612x612&w=0&k=20&c=dOiCTWQM39T6h5tSKcQB_Yg8Dg9Vmi4EpQO13KYL90s=");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: inherit;
 }
-.line-1{
+.line-1 {
   position: relative;
   left: 11rem;
   width: 72px;
@@ -65,7 +69,7 @@ body {
   border-radius: 10px;
 }
 
-.line-2{
+.line-2 {
   position: relative;
   left: 25rem;
   width: 72px;
@@ -75,6 +79,8 @@ body {
 }
 .title {
   text-align: center;
+  color: rgb(133, 34, 226);
+  letter-spacing: 1px;
 }
 
 .todos {
@@ -87,7 +93,7 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 1rem 1.25rem;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.616);
   width: 100%;
   border-radius: 10px;
   font-size: 1.5rem;
@@ -95,12 +101,15 @@ body {
 
   &:hover {
     transition: all 4s ease-in;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.904);
   }
 }
 .mutations {
   display: flex;
   gap: 0.6rem;
+}
+.todo__delete{
+  fill: rgb(186, 42, 42);
 }
 .todo__status,
 .todo__delete {
@@ -115,18 +124,18 @@ body {
     transform: scale(1.15);
   }
 }
-svg{
+svg {
   background: transparent;
 }
-.form-btn{
+.form-btn {
   border: none;
   border-radius: 5px;
-  background-color: rgb(43, 193, 43);
+  background-color: #3d77e3;
   font-weight: 550;
   font-size: larger;
 
   &:hover {
-  background-color: rgb(37, 112, 38);
+    background-color: #1456d2;
   }
 }
 
@@ -148,21 +157,26 @@ svg{
   border: none;
   outline: none;
 
-&:focus, &:hover{
-  background-color: rgba(225, 225, 225, 0.9);
+  &:focus,
+  &:hover {
+    background-color: rgba(225, 225, 225, 0.9);
+  }
 }
+.svg-1{
+  fill: rgb(8, 246, 167);
 }
-
-
+.svg-2{
+  fill:aliceblue;
+}
 /* for mobile responsive */
-@media (max-width: 420px){
-  .title{
+@media (max-width: 420px) {
+  .title {
     font-size: 2rem;
   }
-  .form{
+  .form {
     width: 95%;
   }
-  .todo{
+  .todo {
     width: 98%;
     font-size: 1rem;
   }
