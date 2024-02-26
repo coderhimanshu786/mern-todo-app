@@ -33,7 +33,9 @@ export default function App() {
 
   return (
     <main className="container">
+      <div className="line-1"></div>
       <h1 className="title"> Awesome Todo's </h1>
+      <div className="line-2"></div>
       <form className="form" onSubmit={createNewTodo}>
         <input
           type="text"
@@ -43,7 +45,7 @@ export default function App() {
           className="form__input"
           required
         />
-        <button className="form-btn" type="submit"> Create Todo </button>
+        <button className="form-btn" type="submit"> Add Todo </button>
       </form>
       <div className="todos">
         {todos.length > 0 &&
